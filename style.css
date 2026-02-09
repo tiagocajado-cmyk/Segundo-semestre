@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: crimson;
+}
+
+h1{
+    text-align: center;
+    color: red;
+    font-size: 100px;
+    margin: 20px;
+}
+
+body{
+    background-color: black;
+    background-image: url("assets/fundo.avif");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+p{
+    text-align: justify;
+    font-size: 17px;
+    font-family: 'Arial';
+    margin: 20px;
+}
