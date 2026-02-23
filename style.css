@@ -21,3 +21,24 @@ p{
     font-family: "Gigi";
     margin: 100px 60px;
 }
+
+a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+button{
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+    padding: 10px 29px;
+    font-size: 20px;
+    border-radius: 30px;
+}
