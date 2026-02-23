@@ -9,6 +9,14 @@ body{
     background-color: #5445                                                                                                                                      ;
 }
 
+.segunda {
+    background-color: rebeccapurple;
+}
+
+.terceira {
+    background-color: blue;
+}
+
 h2{
     text-align: center;
     font-size: 60px;
@@ -41,4 +49,42 @@ button{
     padding: 10px 29px;
     font-size: 20px;
     border-radius: 30px;
+}
+
+ol{
+    padding: 30px auto;
+    font-size: 23px;
+    text-align: center;
+    list-style-position: inside;
+}
+
+li {
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+    font-family: "Gigi";
+    padding: 10px;
+}
+
+.oxe {
+    font-size: 30px;
+    color: chartreuse;
+    font-family: "Comic Sans MS";
+    padding: 5px;
+    margin: 10px auto;
+}
+
+.none {
+    font-size: 30px;
+    color: chartreuse;
+    font-family: "Comic Sans MS";
+    padding: 5px;
+    margin: 10px auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: yellow;
+    padding: 10px;
 }
