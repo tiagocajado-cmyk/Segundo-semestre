@@ -1,0 +1,109 @@
+/* Fonte com estilo de desenho animado */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    background-color: #0080FF; /* Azul Oceano */
+    background-image: radial-gradient(#ffffff 10%, transparent 10%);
+    background-size: 60px 60px; /* Bolhas maiores */
+    font-family: 'Fredoka+One', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #FFF000; /* Amarelo Bob */
+    border: 6px solid #E0C000;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 12px 12px 0px #654321; /* Calça Marrom */
+    text-align: center;
+    width: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Furinhos da esponja espalhados */
+.container::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: 
+        radial-gradient(circle, #D4C300 20%, transparent 20%),
+        radial-gradient(circle, #D4C300 15%, transparent 15%);
+    background-size: 100px 100px, 150px 150px;
+    background-position: 0 0, 50px 50px;
+    opacity: 0.3;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Garante que o conteúdo fique acima dos furinhos */
+h1, label, input, button, div[id] {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #000;
+    -webkit-text-stroke: 1px #fff;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #654321;
+}
+
+input {
+    width: 85%;
+    padding: 10px;
+    border: 3px solid #654321;
+    border-radius: 12px;
+    font-family: 'Fredoka+One', cursive;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+button {
+    background-color: #FF4500; /* Vermelho Gravata */
+    color: white;
+    border: 3px solid #654321;
+    padding: 12px 30px;
+    font-family: 'Fredoka+One', cursive;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 15px 0;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #FF6347;
+}
+
+/* Estilização dos blocos de resultados */
+#média, #soma, #produto, #maior, #menor {
+    background: white;
+    border: 2px solid #654321;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Adiciona um rótulo automático antes do valor para ficar bonito */
+#média::before { content: "📊 Média:"; color: #0080FF; }
+#soma::before { content: "➕ Soma:"; color: #0080FF; }
+#produto::before { content: "✖️ Produto:"; color: #0080FF; }
+#maior::before { content: "⬆️ Maior:"; color: #0080FF; }
+#menor::before { content: "⬇️ Menor:"; color: #0080FF; }
