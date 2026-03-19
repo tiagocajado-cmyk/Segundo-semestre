@@ -1,0 +1,111 @@
+/* Importando uma fonte mais limpa e moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Fundo degradê representando o espaço */
+    background: radial-gradient(circle at top right, #2c3e50, #000000);
+    font-family: 'Poppins', sans-serif;
+    color: #f5f5f5;
+    overflow: hidden;
+}
+
+/* Criando um efeito de estrelas sutis no fundo */
+body::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    box-shadow: 10vw 20vh #fff, 30vw 50vh #fff, 70vw 10vh #fff, 90vw 80vh #fff, 50vw 40vh #aaa;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: twinkle 5s infinite;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.05); /* Efeito vidro (glassmorphism) */
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8), 0 0 15px rgba(200, 200, 255, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #e0e0e0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    text-align: left;
+    color: #b0c4de; /* Azul aço claro */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    box-sizing: border-box; /* Garante que o padding não quebre a largura */
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #dcdcdc, #ffffff);
+    color: #1a1a1a;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    background: #ffffff;
+}
+
+#média, #status {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#média {
+    color: #ffffff;
+}
+
+/* Animação simples de piscar para as estrelas */
+@keyframes twinkle {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
