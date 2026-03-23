@@ -1,0 +1,77 @@
+/* Importando uma fonte moderna */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #4a5568;
+    font-weight: 600;
+}
+
+input {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+button {
+    background-color: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #5a67d8;
+    transform: translateY(-2px);
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: none; /* Escondido até ter resultado */
+}
+
+/* Classes para cores dinâmicas do resultado */
+.obrigatorio { background-color: #c6f6d5; color: #2f855a; }
+.facultativo { background-color: #feebc8; color: #c05621; }
+.nao-vota { background-color: #fed7d7; color: #c53030; }
