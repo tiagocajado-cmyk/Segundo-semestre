@@ -1,0 +1,85 @@
+/* Fonte focada em leitura de números e dados */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5; /* Cinza claro de fundo de sistema */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 380px;
+    border-top: 8px solid #2ecc71; /* Faixa verde de "sucesso/dinheiro" */
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #7f8c8d;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    box-sizing: border-box; /* Garante que o padding não quebre a largura */
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2ecc71;
+    box-shadow: 0 0 5px rgba(46, 204, 113, 0.3);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #2c3e50; /* Azul marinho profissional */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #34495e;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    display: none; /* Fica escondido até o cálculo */
+    background-color: #f8f9fa;
+    border: 1px dashed #bdc3c7;
+    color: #2c3e50;
+}
