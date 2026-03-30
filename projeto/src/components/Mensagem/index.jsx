@@ -5,7 +5,8 @@ function Mensagem() {
         // Comandos HTML.
         <div className='mensagem'>
             <h1>Coponente</h1>
-            <p>Este componente é uma mensagem simples.</p>
+            <p>Este é um componente com uma mensagem simples.</p>
+            <hr/>
         </div>
     )
 }

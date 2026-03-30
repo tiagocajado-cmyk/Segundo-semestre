@@ -1,0 +1,54 @@
+/* spider-man-theme.css */
+
+.info-curso {
+    background-color: #1a1a1a; /* Fundo escuro para destacar as cores */
+    border: 4px solid #d00000; /* Vermelho vibrante */
+    border-radius: 15px;
+    padding: 25px;
+    width: 320px;
+    font-family: 'Bangers', 'Arial Black', sans-serif; /* Fonte estilo HQ se disponível */
+    color: #ffffff;
+    box-shadow: 10px 10px 0px #003049; /* Sombra em azul marinho (estilo comic) */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de "Sentido Aranha" ao passar o mouse */
+.info-curso:hover {
+    transform: scale(1.05) rotate(-1deg);
+    border-color: #ff0000;
+    box-shadow: 12px 12px 0px #00507a;
+}
+
+.info-curso h2 {
+    color: #ffffff;
+    background-color: #d00000;
+    margin: -25px -25px 20px -25px;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 4px solid #003049;
+    text-shadow: 2px 2px #000;
+}
+
+.info-curso p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    padding-left: 25px;
+    position: relative;
+    border-bottom: 1px dashed #444;
+}
+
+/* Detalhe de teia/ícone antes de cada parágrafo */
+.info-curso p::before {
+    content: '🕸️';
+    position: absolute;
+    left: 0;
+    color: #d00000;
+}
+
+.info-curso p strong {
+    color: #00a8e8; /* Azul claro para os rótulos */
+}
