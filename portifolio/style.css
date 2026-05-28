@@ -1,7 +1,7 @@
-/* Importando uma fonte moderna do Google Fonts */
+/* Importando a fonte moderna do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
 
-/* Reset básico para garantir que o layout fique igual em qualquer navegador */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -18,15 +18,15 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 20px;
+    padding: 40px 20px; /* Aumentado o padding vertical para telas menores */
 }
 
 /* Containers padrões */
-.container, .sobre, .menu {
+.container, .sobre, .menu, .habilidades {
     width: 100%;
     max-width: 600px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 /* Título Principal - Seu Nome */
@@ -34,7 +34,7 @@ body {
     font-size: 3.5rem;
     color: #8257e5; /* Roxo vibrante */
     margin-bottom: 10px;
-    text-shadow: 0 0 15px rgba(130, 87, 229, 0.4); /* Leve brilho */
+    text-shadow: 0 0 15px rgba(130, 87, 229, 0.4);
 }
 
 /* Card "Quem sou eu?" */
@@ -56,7 +56,7 @@ body {
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.6;
-    color: #c4c4cc; /* Cinza claro para leitura confortável */
+    color: #c4c4cc;
 }
 
 /* Estilo do Botão "Ver mais" */
@@ -71,17 +71,62 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;
-    margin-top: 10px;
 }
 
-/* Efeito ao passar o mouse (Hover) */
 #btVermais:hover {
     background-color: #996dff;
-    transform: translateY(-3px); /* Faz o botão "subir" um pouco */
+    transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(130, 87, 229, 0.5);
 }
 
-/* Remove sublinhado do link */
+/* --- NOVA SEÇÃO: HABILIDADES (LOGOS) --- */
+.habilidades {
+    background-color: #202024;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    border: 1px solid #323238;
+    margin-top: 10px;
+}
+
+.habilidades h1 {
+    font-size: 1.8rem;
+    color: #e1e1e6;
+    margin-bottom: 20px;
+}
+
+/* Alinhando as imagens lado a lado */
+.logos {
+    display: block; /* Mantendo fluxo limpo */
+    text-align: center;
+}
+
+/* Estilizando os links que envolvem as imagens */
+.logos a {
+    display: inline-block;
+    margin: 0 15px; /* Espaçamento entre os logos */
+    transition: transform 0.3s ease;
+}
+
+/* Estilo das imagens dos logos */
+.logos img {
+    width: 65px;  /* Tamanho ideal para visualização */
+    height: 65px;
+    object-fit: contain; /* Garante que a imagem não distorça */
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Efeito Hover nos logos (Eles sobem e ganham brilho) */
+.logos a:hover {
+    transform: translateY(-8px);
+}
+
+.logos a:hover img {
+    filter: drop-shadow(0px 0px 12px #8257e5); /* Brilho roxo ao redor da logo */
+}
+
+/* Remove sublinhado padrão dos links */
 a {
     text-decoration: none;
 }

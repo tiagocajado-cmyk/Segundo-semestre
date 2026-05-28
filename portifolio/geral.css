@@ -1,0 +1,84 @@
+/* Importando a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #121214;
+    color: #e1e1e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Card central de conteúdo */
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #202024;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    border: 1px solid #323238;
+    border-top: 4px solid #8257e5; /* Detalhe em roxo no topo do card */
+    text-align: left; /* Alinhamento à esquerda melhora a leitura de parágrafos */
+    margin-bottom: 30px;
+}
+
+/* Título (Ex: O que é HTML?) */
+.container h1 {
+    font-size: 2.2rem;
+    color: #00e88f; /* Destaque em Verde Neon */
+    margin-bottom: 20px;
+}
+
+/* Parágrafo explicativo */
+.container p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #c4c4cc;
+}
+
+/* Área do botão */
+.menu {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Botão voltar estilizado (Outline) */
+#btVoltar {
+    background: transparent;
+    color: #8257e5;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 2px solid #8257e5;
+    padding: 12px 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+/* Efeito ao passar o mouse no botão Voltar */
+#btVoltar:hover {
+    background-color: #8257e5;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(130, 87, 229, 0.4);
+}
+
+/* Remove o sublinhado do link */
+a {
+    text-decoration: none;
+}
