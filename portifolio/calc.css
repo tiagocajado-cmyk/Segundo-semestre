@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #121214;
+    color: #e1e1e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* --- CARD DA CALCULADORA --- */
+.calc {
+    width: 100%;
+    max-width: 500px;
+    background-color: #202024;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    border: 1px solid #323238;
+    border-top: 4px solid #8257e5; /* Detalhe roxo no topo */
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.calc h1 {
+    font-size: 2.2rem;
+    color: #00e88f; /* Título em verde neon */
+    margin-bottom: 25px;
+}
+
+/* --- ESTILO DOS INPUTS (Caixas de texto) --- */
+.calc input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #121214; /* Fundo mais escuro para o input */
+    border: 1px solid #323238;
+    border-radius: 8px;
+    color: #e1e1e6;
+    font-size: 1.1rem;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.calc input[type="number"]::placeholder {
+    color: #7c7c8a; /* Cor do texto "Primeiro número" */
+}
+
+/* Efeito ao clicar no input (Focus) */
+.calc input[type="number"]:focus {
+    border-color: #8257e5;
+    box-shadow: 0 0 8px rgba(130, 87, 229, 0.5); /* Brilho roxo */
+}
+
+/* Remove as setinhas padrão que os navegadores colocam em input do tipo number */
+.calc input[type="number"]::-webkit-inner-spin-button, 
+.calc input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+/* --- BOTÕES DE OPERAÇÃO --- */
+.calc button {
+    background-color: #323238; /* Cinza médio */
+    color: #e1e1e6;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    padding: 12px 18px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse nos botões de soma, subtração, etc. */
+.calc button:hover {
+    background-color: #8257e5; /* Fica roxo */
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(130, 87, 229, 0.4);
+}
+
+/* --- ESTILO DO RESULTADO --- */
+.calc h2 {
+    margin-top: 30px;
+    font-size: 1.3rem;
+    color: #c4c4cc;
+}
+
+#Resultado {
+    display: block;
+    font-size: 2.5rem; /* Número do resultado bem grande */
+    color: #00e88f; /* Destaque total em verde neon */
+    font-weight: 800;
+    margin-top: 10px;
+    text-shadow: 0 0 15px rgba(0, 232, 143, 0.3);
+}
+
+/* --- MENU E BOTÃO VOLTAR --- */
+.menu {
+    text-align: center;
+}
+
+#btVoltar {
+    background: transparent;
+    color: #00e88f;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 2px solid #00e88f;
+    padding: 12px 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+#btVoltar:hover {
+    background-color: #00e88f;
+    color: #121214;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 232, 143, 0.4);
+}
+
+a {
+    text-decoration: none;
+}

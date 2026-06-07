@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="calc"> 
+        <h1>Calculadora</h1>
+
+        <input type="number" id="num1" placeholder="Primeiro número">
+        <input type="number" id="num2" placeholder="Segundo número">
+
+        <br><br>
+
+        <button onclick="somar()">Somar</button>
+        <button onclick="subtrair()">Subtrair</button>
+        <button onclick="multiplicar()">Multiplicar</button>
+        <button onclick="dividir()">Dividir</button>
+
+        <h2>Resultado: <span id="resultado">0</span></h2>
+
+        <script src="calc.js"></script>
+    </div>
+    <div class="menu">
+        <a href="vermais.html">
+            <button id="btVoltar">Voltar</button>
+        </a>
+    </div>
+
+    
+</body>
+</html>
